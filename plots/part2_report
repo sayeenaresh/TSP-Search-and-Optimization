@@ -1,0 +1,13 @@
+Report for part 2 Plots
+
+A* consistently finds the optimal solution because it evaluates both the actual cost from the start to the current node (g(n)) and a heuristic 
+estimate (h(n)) to the goal. When the heuristic is admissible, A* guarantees an optimal path. The NN, NN2O, and RNN algorithms, on the other hand, 
+tend to find suboptimal solutions due to their greedy or randomized nature. NN produces the least accurate solutions with the lowest total cost 
+difference to A*, and NN2O improves this by optimizing the tour with 2-opt. RNN further improves the cost by incorporating randomness and multiple 
+iterations. RNN seems to be the algorithm that often gets close to A*'s optimal cost, but A* always finds the lowest total cost but at the highest 
+computational expense.
+
+A* generally expands the most nodes compared to NN, NN2O, and RNN, as it explores many possible paths to guarantee optimality. The number of 
+nodes expanded significantly increases as graph sizes grow. NN expands the fewest nodes due to its greedy approach, followed by NN2O and RNN, 
+which introduce more nodes through iterations and optimizations. Although A* may expand fewer nodes in specific cases with highly accurate heuristics, 
+it typically explores exponentially more nodes than the other algorithms.
