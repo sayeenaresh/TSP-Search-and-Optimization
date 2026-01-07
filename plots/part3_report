@@ -1,0 +1,13 @@
+Report for Part 3 Plots
+
+As runtime increases, the distance from the optimal cost generally decreases. We saw that  algorithms like A* and RNN take longer to explore 
+more paths to find the optimal solution.  While long runtimes can indicate that an algorithm is thoroughly searching the solution space, 
+they can indicate challenges in handling the problem's complexity. NN has the fastest runtime but often produces suboptimal results, NN2O 
+improves solution quality with a moderate increase in runtime, and RNN offers better solutions but at a higher computational cost. 
+A* consistently finds the optimal solution but has the longest runtime. We can see that hill climbing typically has a moderate runtime and can 
+find better solutions than NN but often worse than NN2O and RNN. Simulated annealing needs a longer runtime than hill climbing but can achieve 
+solutions closer to RNN or NN2O. The genetic algorithm seems to have the highest runtime among local search methods, like A*, but it can produce 
+solutions nearly as good as RNN. While A* guarantees the optimal solution at a high computational cost, these three methods in Part 3, especially 
+simulated annealing and genetic algorithms, offer a more scalable balance of runtime and solution quality, particularly for larger problem sizes. 
+Also, I would like to note that I used real runtime as the x-axis, which, compared to CPU runtime,  was a more accurate and comprehensive metric than 
+as it measured the actual elapsed time from start to finish, including system activities like the time spent on I/O operations. 
