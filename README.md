@@ -1,4 +1,4 @@
-# TSP-Search-and-Optimization
+# TSP Search and Optimization
 This project investigates a wide spectrum of search algorithms for solving the **Traveling Salesperson Problem (TSP)** and compares them empirically against optimal solutions computed by **A\* with a Minimum Spanning Tree heuristic**.
 
 Course: CMSC 421 – Artificial Intelligence  
